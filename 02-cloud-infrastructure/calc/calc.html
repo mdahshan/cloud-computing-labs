@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+  <div class="w3-container">
+    <h1>Calculator</h1>
+    <form action="../cgi-bin/samples/calc.py" method="get">
+      <label for="a">Operand 1:</label>
+      <input type="text" class="w3-input w3-border" id="a" name="a">
+      <br>
+      <label for="b">Operand 2:</label>
+      <input type="text" class="w3-input w3-border" id="b" name="b">
+      <br>
+      <label for="op">Operation:</label>
+      <select class="w3-select w3-border" id="op" name="op">
+        <option value="add">+</option>
+        <option value="sub">-</option>
+        <option value="mul">*</option>
+        <option value="div">/</option>
+      </select>
+      <br>
+      <input type="submit" class="w3-button w3-blue" value="Calculate">
+    </form>
+  </div>
+</body>
+</html>
+
